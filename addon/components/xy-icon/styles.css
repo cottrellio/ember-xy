@@ -1,0 +1,86 @@
+/**
+ * @module xy-icon
+ */
+.xy-icon {
+  margin: auto;
+  background-repeat: no-repeat no-repeat;
+  display: inline-block;
+  fill: currentColor;
+  height: 24px;
+  width: 24px;
+  min-height: 24px;
+  min-width: 24px;
+}
+
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;  /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Support for IE. */
+  font-feature-settings: 'liga';
+}
+
+.spin {
+  -webkit-animation: spin 1.5s infinite linear; /* Safari 4+ */
+  -moz-animation:    spin 1.5s infinite linear; /* Fx 5+ */
+  -o-animation:      spin 1.5s infinite linear; /* Opera 12+ */
+  animation:         spin 1.5s infinite linear; /* IE 10+, Fx 29+ */
+}
+
+.reverse {
+  -webkit-animation: spin-reverse 1.5s infinite linear; /* Safari 4+ */
+  -moz-animation:    spin-reverse 1.5s infinite linear; /* Fx 5+ */
+  -o-animation:      spin-reverse 1.5s infinite linear; /* Opera 12+ */
+  animation:         spin-reverse 1.5s infinite linear; /* IE 10+, Fx 29+ */
+}
+
+@-webkit-keyframes spin {
+  0%   { transform: rotate(0deg); }
+  100% { transform: rotate(359deg); }
+}
+@-moz-keyframes spin {
+  0%   { transform: rotate(0deg); }
+  100% { transform: rotate(359deg); }
+}
+@-o-keyframes spin {
+  0%   { transform: rotate(0deg); }
+  100% { transform: rotate(359deg); }
+}
+@keyframes spin {
+  0%   { transform: rotate(0deg); }
+  100% { transform: rotate(359deg); }
+}
+
+@-webkit-keyframes spin-reverse {
+  0%   { transform: rotate(0deg); }
+  100% { transform: rotate(-359deg); }
+}
+@-moz-keyframes spin-reverse {
+  0%   { transform: rotate(0deg); }
+  100% { transform: rotate(-359deg); }
+}
+@-o-keyframes spin-reverse {
+  0%   { transform: rotate(0deg); }
+  100% { transform: rotate(-359deg); }
+}
+@keyframes spin-reverse {
+  0%   { transform: rotate(0deg); }
+  100% { transform: rotate(-359deg); }
+}
