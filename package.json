@@ -1,17 +1,22 @@
 {
   "name": "xy-components",
-  "version": "0.0.0",
-  "description": "The default blueprint for ember-cli addons.",
+  "version": "0.0.1",
+  "description": "Ember components lib (inspired by material design) using Ember-CSS-Modules",
   "keywords": [
+    "ember-components",
+    "css-modules",
+    "material-design",
     "ember-addon"
   ],
   "license": "MIT",
-  "author": "",
+  "author": "Dave Cottrell <dave@cottrell.io> (https://cottrell.io/)",
+  "bugs": "https://github.com/cottrellio/xy-components/issues",
+  "homepage": "https://cottrellio.github.io/xy-components/",
   "directories": {
     "doc": "doc",
     "test": "tests"
   },
-  "repository": "",
+  "repository": "git@github.com:cottrellio/xy-components.git",
   "scripts": {
     "build": "ember build",
     "start": "ember server",
@@ -48,6 +53,7 @@
     "node": "^4.5 || 6.* || >= 7.*"
   },
   "ember-addon": {
-    "configPath": "tests/dummy/config"
+    "configPath": "tests/dummy/config",
+    "demoURL": "https://cottrellio.github.io/xy-components/"
   }
 }

@@ -1,10 +1,10 @@
 # xy-components
 
-This README outlines the details of collaborating on this Ember addon.
+Yet another Material Design component-library, but this time written with [https://github.com/salsify/ember-css-modules](Ember-CSS-Modules)!
 
 ## Installation
 
-* `git clone <repository-url>` this repository
+* `git clone git@github.com:cottrellio/xy-components.git` this repository
 * `cd xy-components`
 * `npm install`
 
