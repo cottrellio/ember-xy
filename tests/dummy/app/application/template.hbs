@@ -1,74 +1,14 @@
-<h1>Xy-Components</h1>
-<p>A component library inspired by ember-paper, but written with CSS Modules.</p>
-
-<section>
-  <div class="part">
-    <h2>XY-Icon</h2>
-
+{{#xy-section}}
+  {{#xy-part}}
+    <h1>Xy-Components</h1>
     <p>
-      Xy-icon can be used to easily implement material icons. Using the <a href="http://google.github.io/material-design-icons/#icon-font-for-the-web">Material Icon Font</a>
+      Yet another Material-inpsired component-library for Ember, but this time written with <a href="https://github.com/salsify/ember-css-modules">Ember-CSS-Modules</a>!
     </p>
-  </div>
+  {{/xy-part}}
 
-  <div class="part">
-    <h3>Example:</h3>
+  {{#link-to 'comps.xy-icon'}}xy-icon{{/link-to}}
+  {{#link-to 'comps.xy-section'}}xy-section{{/link-to}}
+  {{#link-to 'comps.xy-part'}}xy-part{{/link-to}}
 
-    <strong>Allowed Arguments</strong>
-    <ul>
-      <li><code>icon</code> - {String} The Material Icon name (<a href="https://material.io/icons/">Search Material Icons</a>).</li>
-      <li><code>size</code> - {Number} The size of the icon.</li>
-      <li><code>spin</code> - {Boolean} Spin the icon clock-wise.</li>
-      <li><code>reverse</code> - {Boolean} Spin the icon counter clock-wise.</li>
-    </ul>
-  </div>
-
-  <div class="part">
-    <strong>Icon</strong>
-
-    <p>
-      Simply pass in the name of the icon as the first argument, or by using a named <code>icon='check_circle'</code> argument.
-    </p>
-    <p>
-      <code>&#123;&#123;xy-icon 'check_circle'&#125;&#125;</code> or <code>&#123;&#123;xy-icon icon='check_circle'&#125;&#125;</code>
-    </p>
-    {{xy-icon 'check_circle'}}
-  </div>
-
-  <div class="part">
-    <strong>Size</strong>
-
-    <p>
-      You can adjust the size by passing a named <code>size=40</code> argument.
-    </p>
-    <p>
-      <code>&#123;&#123;xy-icon 'check_circle' size=40&#125;&#125;</code>
-    </p>
-    {{xy-icon 'check_circle' size=40}}
-  </div>
-
-  <div class="part">
-    <strong>Spin</strong>
-
-    <p>
-      You can turn on clock-wise animation by using the <code>spin=true</code> argument.
-    </p>
-    <p>
-      <code>&#123;&#123;xy-icon 'accessibility' spin=true&#125;&#125;</code>
-    </p>
-    {{xy-icon 'accessibility' spin=true}}
-  </div>
-
-  <div class="part">
-    <strong>Reverse</strong>
-
-    <p>
-      You can turn on counter clock-wise animation by using the <code>reverse=true</code> argument.
-    </p>
-    <p>
-      <code>&#123;&#123;xy-icon 'accessibility' reverse=true&#125;&#125;</code>
-    </p>
-    {{xy-icon 'accessibility' reverse=true}}
-  </div>
-</section>
-
-{{outlet}}
+  {{outlet}}
+{{/xy-section}}

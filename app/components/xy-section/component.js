@@ -1,0 +1,1 @@
+export { default } from 'xy-components/components/xy-section/component';

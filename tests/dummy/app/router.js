@@ -7,6 +7,11 @@ const Router = EmberRouter.extend({
 });
 
 Router.map(function() {
+  this.route('comps', { path: 'components'}, function() {
+    this.route('xy-icon');
+    this.route('xy-section');
+    this.route('xy-part');
+  });
 });
 
 export default Router;

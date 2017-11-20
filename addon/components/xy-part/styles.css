@@ -1,0 +1,122 @@
+.xy-part {
+  display: block;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.xl {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+@media (min-width:48rem) {
+  .xl {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+}
+
+@media (min-width:64rem) {
+  .xl {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+  }
+}
+
+@media (min-width:128rem) {
+  .xl {
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+  }
+}
+
+.lg {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+@media (min-width:48rem) {
+  lg {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+}
+
+@media (min-width:64rem) {
+  .lg {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+}
+
+@media (min-width:128rem) {
+  .lg {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+  }
+}
+
+.md {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.sm {
+  padding-top: .5rem;
+  padding-bottom: .5rem;
+}
+
+.sm.pad,
+.sm.pad {
+  padding-left: .5rem;
+  padding-right: .5rem;
+}
+
+.hero {
+  padding-top: 4rem;
+}
+
+.last {
+  padding-bottom: 0;
+}
+
+.full-pad {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.with-footer {
+  padding-bottom: 6rem;
+}
+
+.with-lg-footer {
+  padding-bottom: 10rem;
+}
+
+.box {
+  margin-bottom: 1rem;
+  border: 1px solid rgba(189, 187, 187, .25);
+  padding: 1rem;
+  border-radius: 3px;
+}
+
+.box.lg {
+  padding: 2rem;
+}
+
+.isClickable {
+  cursor: pointer;
+}
+
+.isClickable:hover {
+  border-color: #00afaa;
+  background-color: rgba(0, 175, 170, .1);
+}
+
+.code {
+  position: relative;
+  padding: 1rem;
+  padding-right: 4rem;
+  margin: 1rem 0;
+  background-color: #f8f8f8;
+}
