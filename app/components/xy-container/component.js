@@ -1,1 +1,0 @@
-export { default } from 'xy-components/components/xy-container/component';
