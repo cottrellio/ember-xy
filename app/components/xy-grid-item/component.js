@@ -1,0 +1,1 @@
+export { default } from 'xy-components/components/xy-grid-item/component';

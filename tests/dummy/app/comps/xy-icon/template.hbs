@@ -1,95 +1,97 @@
-{{#xy-part size="md"}}
-  <h2>XY-Icon</h2>
-  <p>
-    Xy-icon can be used to easily implement material icons. Using the <a href="http://google.github.io/material-design-icons/#icon-font-for-the-web">Material Icon Font</a>
-  </p>
-{{/xy-part}}
-
 {{#xy-part}}
-  <h3>Demo</h3>
-  <hr>
-  {{#xy-part}}
-    <strong>Icon</strong>
-
+  {{#xy-part size="md"}}
+    <h2>xy-icon</h2>
     <p>
-      Simply pass in the name of the icon as the first argument, or by using a named <code>icon='check_circle'</code> argument.
+      <code>xy-icon</code> can be used to easily implement material icons. Using the <a href="http://google.github.io/material-design-icons/#icon-font-for-the-web">Material Icon Font</a>
     </p>
-    {{#xy-part size="sm" code=true}}
-      <code>&#123;&#123;xy-icon 'check_circle'&#125;&#125;</code> or <code>&#123;&#123;xy-icon icon='check_circle'&#125;&#125;</code>
-    {{/xy-part}}
-
-    {{xy-icon 'check_circle'}}
   {{/xy-part}}
 
   {{#xy-part}}
-    <strong>Size</strong>
+    <h3>Demo</h3>
+    <hr>
+    {{#xy-part}}
+      <strong>Icon</strong>
 
-    <p>
-      You can adjust the size by passing a named <code>size=40</code> argument.
-    </p>
-    {{#xy-part size="sm" code=true}}
-      <code>&#123;&#123;xy-icon 'check_circle' size=40&#125;&#125;</code>
+      <p>
+        Simply pass in the name of the icon as the first argument, or by using a named <code>icon='check_circle'</code> argument.
+      </p>
+      {{#xy-part size="sm" code=true}}
+        <code>&#123;&#123;xy-icon 'check_circle'&#125;&#125;</code> or <code>&#123;&#123;xy-icon icon='check_circle'&#125;&#125;</code>
+      {{/xy-part}}
+
+      {{xy-icon 'check_circle'}}
     {{/xy-part}}
 
-    {{xy-icon 'check_circle' size=40}}
+    {{#xy-part}}
+      <strong>Size</strong>
+
+      <p>
+        You can adjust the size by passing a named <code>size=40</code> argument.
+      </p>
+      {{#xy-part size="sm" code=true}}
+        <code>&#123;&#123;xy-icon 'check_circle' size=40&#125;&#125;</code>
+      {{/xy-part}}
+
+      {{xy-icon 'check_circle' size=40}}
+    {{/xy-part}}
+
+    {{#xy-part}}
+      <strong>Spin</strong>
+
+      <p>
+        You can turn on clock-wise animation by using the <code>spin=true</code> argument.
+      </p>
+      {{#xy-part size="sm" code=true}}
+        <code>&#123;&#123;xy-icon 'accessibility' spin=true&#125;&#125;</code>
+      {{/xy-part}}
+
+      {{xy-icon 'accessibility' spin=true}}
+    {{/xy-part}}
+
+    {{#xy-part}}
+      <strong>Reverse</strong>
+
+      <p>
+        You can turn on counter clock-wise animation by using the <code>reverse=true</code> argument.
+      </p>
+      {{#xy-part size="sm" code=true}}
+        <code>&#123;&#123;xy-icon 'accessibility' reverse=true&#125;&#125;</code>
+      {{/xy-part}}
+
+      {{xy-icon 'accessibility' reverse=true}}
+    {{/xy-part}}
   {{/xy-part}}
 
   {{#xy-part}}
-    <strong>Spin</strong>
-
+    <h3>Usage</h3>
+    <hr>
+    <strong>Icon</strong> <em>{String}</em>
     <p>
-      You can turn on clock-wise animation by using the <code>spin=true</code> argument.
+      The name of the icon to be displayed. See <a href="https://material.io/icons/">Material Icons</a> for options (Expects <code>snake_case</code> syntax).
     </p>
-    {{#xy-part size="sm" code=true}}
-      <code>&#123;&#123;xy-icon 'accessibility' spin=true&#125;&#125;</code>
-    {{/xy-part}}
 
-    {{xy-icon 'accessibility' spin=true}}
-  {{/xy-part}}
-
-  {{#xy-part}}
-    <strong>Reverse</strong>
-
+    <strong>Size</strong> <em>{Number|String}</em>
     <p>
-      You can turn on counter clock-wise animation by using the <code>reverse=true</code> argument.
+      Default: <code>24px</code>
     </p>
-    {{#xy-part size="sm" code=true}}
-      <code>&#123;&#123;xy-icon 'accessibility' reverse=true&#125;&#125;</code>
-    {{/xy-part}}
+    <p>
+      The size of the icon.
+    </p>
 
-    {{xy-icon 'accessibility' reverse=true}}
+    <strong>Spin</strong> <em>{Boolean}</em>
+    <p>
+      Default: <code>fasle</code>
+    </p>
+    <p>
+      Causes the icon to rotate clock-wise.
+    </p>
+
+    <strong>Reverse</strong> <em>{Boolean}</em>
+    <p>
+      Default: <code>fasle</code>
+    </p>
+    <p>
+      Causes the icon to rotate counter clock-wise.
+    </p>
   {{/xy-part}}
-{{/xy-part}}
-
-{{#xy-part}}
-  <h3>Usage</h3>
-  <hr>
-  <strong>Icon</strong> <em>{String}</em>
-  <p>
-    The name of the icon to be displayed. See <a href="https://material.io/icons/">Material Icons</a> for options (Expects <code>snake_case</code> syntax).
-  </p>
-
-  <strong>Size</strong> <em>{Number|String}</em>
-  <p>
-    Default: <code>24px</code>
-  </p>
-  <p>
-    The size of the icon.
-  </p>
-
-  <strong>Spin</strong> <em>{Boolean}</em>
-  <p>
-    Default: <code>fasle</code>
-  </p>
-  <p>
-    Causes the icon to rotate clock-wise.
-  </p>
-
-  <strong>Reverse</strong> <em>{Boolean}</em>
-  <p>
-    Default: <code>fasle</code>
-  </p>
-  <p>
-    Causes the icon to rotate counter clock-wise.
-  </p>
 {{/xy-part}}
