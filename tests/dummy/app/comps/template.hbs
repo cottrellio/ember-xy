@@ -1,1 +1,31 @@
-{{outlet}}
+{{#xy-grid}}
+  {{#xy-grid-item xs="one-whole" sm="one-fifth" md="one-sixth"}}
+    {{#xy-part}}
+      {{#xy-layout vertical=true}}
+        {{#xy-part}}
+          {{#xy-part size="sm"}}
+            {{#xy-layout vertical=true}}
+              <h3>General</h3>
+              {{#link-to "comps.xy-icon"}}xy-icon{{/link-to}}
+            {{/xy-layout}}
+          {{/xy-part}}
+
+          {{#xy-part size="sm"}}
+            {{#xy-layout vertical=true}}
+              <h3>Structural</h3>
+              {{#link-to "comps.xy-layout"}}xy-layout{{/link-to}}
+              {{#link-to "comps.xy-grid"}}xy-grid{{/link-to}}
+              {{#link-to "comps.xy-grid-item"}}xy-grid-item{{/link-to}}
+              {{#link-to "comps.xy-section"}}xy-section{{/link-to}}
+              {{#link-to "comps.xy-part"}}xy-part{{/link-to}}
+            {{/xy-layout}}
+          {{/xy-part}}
+        {{/xy-part}}
+      {{/xy-layout}}
+    {{/xy-part}}
+  {{/xy-grid-item}}
+
+  {{#xy-grid-item xs="one-whole" sm="four-fifths" md="five-sixths"}}
+    {{outlet}}
+  {{/xy-grid-item}}
+{{/xy-grid}}

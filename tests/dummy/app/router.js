@@ -7,7 +7,7 @@ const Router = EmberRouter.extend({
 });
 
 Router.map(function() {
-  this.route('comps', { path: 'components'}, function() {
+  this.route('comps', { path: 'components' }, function() {
     this.route('xy-icon');
     this.route('xy-section');
     this.route('xy-part');
@@ -16,6 +16,7 @@ Router.map(function() {
     this.route('xy-grid');
     this.route('xy-grid-item');
   });
+  this.route('application/index', { path: '/' }, function() {});
 });
 
 export default Router;
