@@ -1,20 +1,25 @@
 {{#xy-part}}
-  <h2>Why CSS Modules?</h2>
-  <p>
-    Make CSS a first-class citizen in your Ember components. It makes it easier to extend the styles,
-    use CSS vars in your javascript, and best of all, have your <code>styles.css</code> file in your
-    component pod right along side the <code>template.hbs</code> and <code>component.js</code> files!
-  </p>
+  {{#xy-grid flush=true}}
+    {{#xy-grid-item xs="one-whole" sm="one-half"}}
+      <h2>Why CSS Modules?</h2>
+      <p>
+        Make CSS a first-class citizen in your Ember components. It makes it easier to extend the styles,
+        use CSS vars in your javascript, and best of all, have your <code>styles.css</code> file in your
+        component pod right along side the <code>template.hbs</code> and <code>component.js</code> files!
+      </p>
+    {{/xy-grid-item}}
 
-  <p>
-    <pre><code>
-    components/
-    ...
-    |-- my-component/
-        |-- component.js
-        |-- styles.css
-        |-- template.hbs
-    ...
-    </code></pre>
-  </p>
+    {{#xy-grid-item xs="one-whole" sm="one-half"}}
+      {{#xy-part size="xs" code=true}}
+        <pre><code>
+        components/
+        |-- my-component/
+            |-- component.js
+            |-- styles.css
+            |-- template.hbs
+        ...
+        </code></pre>
+      {{/xy-part}}
+    {{/xy-grid-item}}
+  {{/xy-grid}}
 {{/xy-part}}

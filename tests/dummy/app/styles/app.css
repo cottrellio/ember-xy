@@ -99,6 +99,10 @@ address {
   font-style: normal;
 }
 
+code {
+  background-color: #f8f8f8;
+}
+
 .h1,
 .h2,
 .h3,
@@ -403,4 +407,12 @@ h5 {
 .h6,
 h6 {
   font-size: .875rem;
+}
+
+a {
+  color: #006eff;
+}
+
+a:hover {
+  color: #4696ff;
 }

@@ -15,10 +15,11 @@
   --screen-xl-min: var(--xl-min)rem;
 }
 
-@custom-media --sm-viewport only screen and (min-width: 48rem);
-@custom-media --md-viewport only screen and (min-width: 64rem);
-@custom-media --lg-viewport only screen and (min-width: 80rem);
-@custom-media --xl-viewport only screen and (min-width: 128rem);
+@custom-media --xs-viewport only screen and (min-width: --var(--screen-xs-min));
+@custom-media --sm-viewport only screen and (min-width: --var(--screen-sm-min));
+@custom-media --md-viewport only screen and (min-width: --var(--screen-md-min));
+@custom-media --lg-viewport only screen and (min-width: --var(--screen-lg-min));
+@custom-media --xl-viewport only screen and (min-width: --var(--screen-xl-min));
 
 .layout.horizontal,
 .layout.vertical {
@@ -212,7 +213,7 @@
   -ms-flex-pack: justify;
 }
 
-@media (min-width:30rem) {
+@media (--xs-viewport) {
   .layout.xs-horizontal {
     -webkit-flex-flow: row;
     -moz-flex-flow: row;
@@ -225,7 +226,7 @@
   }
 }
 
-@media (min-width:48rem) {
+@media (--sm-viewport) {
   .layout.sm-horizontal {
     -webkit-flex-flow: row;
     -moz-flex-flow: row;
@@ -238,7 +239,7 @@
   }
 }
 
-@media (min-width:64rem) {
+@media (--md-viewport) {
   .layout.md-horizontal {
     -webkit-flex-flow: row;
     -moz-flex-flow: row;
@@ -251,7 +252,7 @@
   }
 }
 
-@media (min-width:80rem) {
+@media (--lg-viewport) {
   .layout.lg-horizontal {
     -webkit-flex-flow: row;
     -moz-flex-flow: row;
@@ -264,7 +265,7 @@
   }
 }
 
-@media (min-width:128rem) {
+@media (--xl-viewport) {
   .layout.xl-horizontal {
     -webkit-flex-flow: row;
     -moz-flex-flow: row;
