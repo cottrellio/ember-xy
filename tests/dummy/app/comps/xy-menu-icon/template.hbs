@@ -1,0 +1,38 @@
+{{#xy-part size="md"}}
+  <h2>xy-menu-icon</h2>
+  <p>
+    <code>xy-menu-icon</code> is a cool animated menu icon that toggles between <code>menu</code> and <code>close</code> icons.
+  </p>
+
+  {{#xy-part}}
+    <h3>Demo</h3>
+    <hr>
+    {{#xy-part}}
+      <strong>isOpen</strong>
+
+      <p>
+        Simply pass in the boolean you are wanting to toggle <code>isOpen='isOpen'</code>.
+      </p>
+      {{#xy-part size="sm" code=true}}
+        <code>&#123;&#123;xy-menu-icon isOpen=(mut isOpen)&#125;&#125;</code>
+      {{/xy-part}}
+
+      {{#xy-part size="sm"}}
+        {{xy-menu-icon isOpen=(mut demoIsOpen)}}
+      {{/xy-part}}
+
+      {{#xy-part size="sm"}}
+        Here is <code>isOpen</code>: {{demoIsOpen}}
+      {{/xy-part}}
+    {{/xy-part}}
+  {{/xy-part}}
+
+  {{#xy-part}}
+    <h3>Usage</h3>
+    <hr>
+    <strong>isOpen</strong> <em>{Boolean}</em>
+    <p>
+      When <code>isOpen: false</code>, the hamburger menu icon is displayed. When <code>isOpen: true</code>, the close icon is displayed.
+    </p>
+  {{/xy-part}}
+{{/xy-part}}

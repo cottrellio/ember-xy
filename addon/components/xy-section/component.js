@@ -1,59 +1,39 @@
 import Component from '@ember/component';
-import { computed, get } from '@ember/object';
+import PaddingMarginMixin from 'xy-components/mixins/padding-margin';
 import layout from './template';
 import styles from './styles';
 
-export default Component.extend({
+/**
+ * `xy-section` is a structural component used to easily add padding and/ or margin
+ * to the enclosed section.
+ *
+ * Demo:
+ * ```
+ * {{#xy-section padding="none md" margin="xs none none none"}}
+ *   ...
+ * {{/xy-section}}
+ * ```
+ *
+ * Usage:
+ * @attr padding {String} - Accepts size args (xs, sm, md, lg, xl) for the following
+ *                          patterns:
+ *                                    left | top | right | bottom
+ *                                    top | horizontal | bottom
+ *                                    vertical | horizontal
+ *                                    all
+ *
+ * @attr margin {String} - Accepts size args (xs, sm, md, lg, xl) for the following
+ *                         patterns:
+ *                                    left | top | right | bottom
+ *                                    top | horizontal | bottom
+ *                                    vertical | horizontal
+ *                                    all
+ */
+export default Component.extend(PaddingMarginMixin, {
 
   tagName: 'xy-section',
   layout,
   styles,
   localClassNames: ['xy-section'],
-  localClassNameBindings: ['paddingClass', 'marginClass'],
-
-  padding: '',
-  margin: '',
-
-  paddingClass: computed('padding', function() {
-    const padding = get(this, 'padding').split(' ');
-    let cls = '';
-
-    if (padding.length === 4) {
-      // left | top | right | bottom
-      cls = `pad-l-${padding[0]} pad-t-${padding[1]} pad-r-${padding[2]} pad-b-${padding[3]}`;
-    } else if (padding.length === 3) {
-      // top | horizontal | bottom
-      cls = `pad-t-${padding[0]} pad-l-${padding[1]} pad-r-${padding[1]} pad-b-${padding[2]}`;
-    } else if (padding.length === 2) {
-      // vertical | horizontal
-      cls = `pad-t-${padding[0]} pad-b-${padding[0]} pad-l-${padding[1]} pad-r-${padding[1]}`;
-    } else if (padding.length === 1) {
-      // all
-      cls = `pad-l-${padding[0]} pad-t-${padding[0]} pad-r-${padding[0]} pad-b-${padding[0]}`;
-    }
-
-    return cls;
-  }),
-
-  marginClass: computed('margin', function() {
-    const margin = get(this, 'margin').split(' ');
-    let cls = '';
-
-    if (margin.length === 4) {
-      // left | top | right | bottom
-      cls = `mar-l-${margin[0]} mar-t-${margin[1]} mar-r-${margin[2]} mar-b-${margin[3]}`;
-    } else if (margin.length === 3) {
-      // top | horizontal | bottom
-      cls = `mar-t-${margin[0]} mar-l-${margin[1]} mar-r-${margin[1]} mar-b-${margin[2]}`;
-    } else if (margin.length === 2) {
-      // vertical | horizontal
-      cls = `mar-t-${margin[0]} mar-b-${margin[0]} mar-l-${margin[1]} mar-r-${margin[1]}`;
-    } else if (margin.length === 1) {
-      // all
-      cls = `mar-l-${margin[0]} mar-t-${margin[0]} mar-r-${margin[0]} mar-b-${margin[0]}`;
-    }
-
-    return cls;
-  }),
 
 });

@@ -1,0 +1,31 @@
+.drawer {
+  position: fixed;
+  z-index: 10;
+  background-color: #f9f9f9;
+  height: 100%;
+  top: 0;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0, 1);
+}
+
+.left {
+  left: 0;
+  -webkit-transform: translate(-280px, 0);
+  transform: translate(-280px, 0);
+}
+
+.right {
+  right: -280px;
+  -webkit-transform: translate(0, 0);
+  transform: translate(0, 0);
+}
+
+.left.open {
+  -webkit-transform: translate(0, 0);
+  transform: translate(0, 0);
+}
+
+.right.open {
+  -webkit-transform: translate(-280px, 0);
+  transform: translate(-280px, 0);
+}

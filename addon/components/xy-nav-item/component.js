@@ -6,10 +6,6 @@ export default Component.extend({
 
   layout,
   styles,
-  localClassNames: 'drawer',
-  localClassNameBindings: ['isOpen:open', 'isRight:right:left'],
-
-  isOpen: false,
-  isRight: false,
+  localClassNames: 'nav-item',
 
 });

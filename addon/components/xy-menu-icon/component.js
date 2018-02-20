@@ -6,10 +6,13 @@ export default Component.extend({
 
   layout,
   styles,
-  localClassNames: 'drawer',
-  localClassNameBindings: ['isOpen:open', 'isRight:right:left'],
+  localClassNames: 'icon',
+  localClassNameBindings: 'isOpen:open',
 
   isOpen: false,
-  isRight: false,
+
+  click() {
+    this.toggleProperty('isOpen');
+  },
 
 });

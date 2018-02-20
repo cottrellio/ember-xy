@@ -1,13 +1,46 @@
 {{#xy-section padding="none md"}}
   {{#xy-part}}
     {{#xy-layout horizontal=true center=true justified=true}}
-      <h1>xy-components <small>(v{{config.APP.version}})</small></h1>
-      <nav>
-        {{#link-to "comps.xy-icon"}}Components{{/link-to}}
-      </nav>
+      <h1><img src="/xy.svg" alt="ember-xy"/> <small>(v<a href="">{{config.APP.version}}</a>)</small></h1>
+      {{#xy-layout class="sm-hide-box" horizontal=true}}
+        {{#xy-nav-item}}{{#link-to 'application'}}About{{/link-to}}{{/xy-nav-item}}
+        {{#xy-nav-item}}{{#link-to 'comps.xy-icon'}}Components{{/link-to}}{{/xy-nav-item}}
+      {{/xy-layout}}
+      {{xy-menu-icon class="sm-show" isOpen=(mut showMainNav)}}
     {{/xy-layout}}
-    Ember components built with <a href="https://github.com/salsify/ember-css-modules">Ember-CSS-Modules</a>!
   {{/xy-part}}
 
   {{outlet}}
 {{/xy-section}}
+
+{{#xy-drawer class="sm-show" isOpen=(mut showMainNav)}}
+  {{#xy-section padding="none lg"}}
+    {{#xy-layout vertical=true class="sidebar"}}
+      {{#xy-part}}
+        {{#xy-part size="sm"}}
+          {{#xy-layout vertical=true}}
+            {{#link-to "application"}}About{{/link-to}}
+          {{/xy-layout}}
+        {{/xy-part}}
+        {{#xy-part size="sm"}}
+          {{#xy-layout vertical=true}}
+            <h3>General</h3>
+            {{#link-to "comps.xy-icon"}}xy-icon{{/link-to}}
+            {{#link-to "comps.xy-menu-icon"}}xy-menu-icon{{/link-to}}
+          {{/xy-layout}}
+        {{/xy-part}}
+
+        {{#xy-part size="sm"}}
+          {{#xy-layout vertical=true}}
+            <h3>Structural</h3>
+            {{#link-to "comps.xy-layout"}}xy-layout{{/link-to}}
+            {{#link-to "comps.xy-grid"}}xy-grid{{/link-to}}
+            {{#link-to "comps.xy-grid-item"}}xy-grid-item{{/link-to}}
+            {{#link-to "comps.xy-section"}}xy-section{{/link-to}}
+            {{#link-to "comps.xy-part"}}xy-part{{/link-to}}
+          {{/xy-layout}}
+        {{/xy-part}}
+      {{/xy-part}}
+    {{/xy-layout}}
+  {{/xy-section}}
+{{/xy-drawer}}

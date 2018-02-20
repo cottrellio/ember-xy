@@ -15,6 +15,8 @@ Router.map(function() {
     this.route('xy-layout');
     this.route('xy-grid');
     this.route('xy-grid-item');
+    this.route('xy-collapsible-nav');
+    this.route('xy-menu-icon');
   });
   this.route('application/index', { path: '/' }, function() {});
 });

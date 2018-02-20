@@ -1,12 +1,13 @@
 {{#xy-grid flush=true}}
-  {{#xy-grid-item xs="one-whole" sm="one-fifth" md="one-sixth"}}
-    {{#xy-part}}
+  {{#xy-grid-item class="sm-hide-inline" sm="one-fifth" md="one-sixth"}}
+    {{#xy-part class="fixed"}}
       {{#xy-layout vertical=true}}
         {{#xy-part}}
           {{#xy-part size="sm"}}
             {{#xy-layout vertical=true}}
               <h3>General</h3>
               {{#link-to "comps.xy-icon"}}xy-icon{{/link-to}}
+              {{#link-to "comps.xy-menu-icon"}}xy-menu-icon{{/link-to}}
             {{/xy-layout}}
           {{/xy-part}}
 

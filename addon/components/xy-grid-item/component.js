@@ -9,39 +9,46 @@ export default Component.extend({
   layout,
   styles,
   localClassNames: 'grid__item',
-  localClassNameBindings: ['xsClass', 'smClass', 'mdClass', 'lgClass'],
+  localClassNameBindings: ['_xsClass', '_smClass', '_mdClass', '_lgClass'],
 
-  xsClass: computed( 'xs', function() {
+  // @public
+  xs: '',
+  sm: '',
+  md: '',
+  lg: '',
+  xl: '',
+
+  _xsClass: computed( 'xs', function() {
     const xs = get(this, 'xs');
-    const cls = (xs) ? `xs-${xs}` : '';
+    const cls = (xs && xs !== '') ? `xs-${xs}` : '';
 
     return cls;
   }),
 
-  smClass: computed( 'sm', function() {
+  _smClass: computed( 'sm', function() {
     const sm = get(this, 'sm');
-    const cls = (sm) ? `sm-${sm}` : '';
+    const cls = (sm && sm !== '') ? `sm-${sm}` : '';
 
     return cls;
   }),
 
-  mdClass: computed( 'md', function() {
+  _mdClass: computed( 'md', function() {
     const md = get(this, 'md');
-    const cls = (md) ? `md-${md}` : '';
+    const cls = (md && md !== '') ? `md-${md}` : '';
 
     return cls;
   }),
 
-  lgClass: computed( 'lg', function() {
+  _lgClass: computed( 'lg', function() {
     const lg = get(this, 'lg');
-    const cls = (lg) ? `lg-${lg}` : '';
+    const cls = (lg && lg !== '') ? `lg-${lg}` : '';
 
     return cls;
   }),
 
-  xlClass: computed( 'xl', function() {
+  _xlClass: computed( 'xl', function() {
     const xl = get(this, 'xl');
-    const cls = (xl) ? `xl-${xl}` : '';
+    const cls = (xl && xl !== '') ? `xl-${xl}` : '';
 
     return cls;
   }),

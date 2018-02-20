@@ -146,7 +146,7 @@ h5 small,
 h6 .small,
 h6 small {
   font-weight: 400;
-  font-size: 75%;
+  font-size: 30%;
   line-height: 1;
 }
 
@@ -415,4 +415,183 @@ a {
 
 a:hover {
   color: #4696ff;
+}
+
+:global(.sidebar) {
+  width: 210px;
+}
+
+:global(.fixed) {
+  position: fixed;
+}
+
+/* HIDE / SHOW classes */
+
+/* xs */
+:global(.xs-hide),
+:global(.xs-hide-box) {
+  display: none !important;
+}
+
+:global(.xs-show) {
+  display: block !important;
+}
+:global(.xs-show-box) {
+  display: -webkit-box !important;
+  display: -moz-box !important;
+  display: -ms-flexbox !important;
+  display: box !important;
+}
+
+/* sm */
+:global(.sm-hide),
+:global(.sm-hide-box),
+:global(.sm-hide-inline) {
+  display: none !important;
+}
+
+:global(.sm-show) {
+  display: block !important;
+}
+:global(.sm-show-box) {
+  display: -webkit-box !important;
+  display: -moz-box !important;
+  display: -ms-flexbox !important;
+  display: box !important;
+}
+
+/* md */
+:global(.md-hide),
+:global(.md-hide-box) {
+  display: none !important;
+}
+
+:global(.md-show) {
+  display: block !important;
+}
+:global(.md-show-box) {
+  display: -webkit-box !important;
+  display: -moz-box !important;
+  display: -ms-flexbox !important;
+  display: box !important;
+}
+
+/* lg */
+:global(.lg-hide),
+:global(.lg-hide-box) {
+  display: none !important;
+}
+
+:global(.lg-show) {
+  display: block !important;
+}
+:global(.lg-show-box) {
+  display: -webkit-box !important;
+  display: -moz-box !important;
+  display: -ms-flexbox !important;
+  display: box !important;
+}
+
+/* xl */
+:global(.xl-hide),
+:global(.xl-hide-box) {
+  display: none !important;
+}
+
+:global(.xl-show) {
+  display: block !important;
+}
+:global(.xl-show-box) {
+  display: -webkit-box !important;
+  display: -moz-box !important;
+  display: -ms-flexbox !important;
+  display: box !important;
+}
+
+@media (min-width: 30rem) {
+  :global(.xs-hide) {
+    display: block;
+  }
+  :global(.xs-hide-box) {
+    display: -webkit-box !important;
+    display: -moz-box !important;
+    display: -ms-flexbox !important;
+    display: box !important;
+  }
+
+  :global(.xs-show),
+  :global(.xs-show-box) {
+    display: none !important;
+  }
+}
+
+@media (min-width: 48rem) {
+  :global(.sm-hide) {
+    display: block;
+  }
+  :global(.sm-hide-box) {
+    display: -webkit-box !important;
+    display: -moz-box !important;
+    display: -ms-flexbox !important;
+    display: box !important;
+  }
+  :global(.sm-hide-inline) {
+    display: inline-block !important;
+  }
+
+  :global(.sm-show),
+  :global(.sm-show-box) {
+    display: none !important;
+  }
+}
+
+@media (min-width: 64rem) {
+  :global(.md-hide) {
+    display: block;
+  }
+  :global(.md-hide-box) {
+    display: -webkit-box !important;
+    display: -moz-box !important;
+    display: -ms-flexbox !important;
+    display: box !important;
+  }
+
+  :global(.md-show),
+  :global(.md-show-box) {
+    display: none !important;
+  }
+}
+
+@media (min-width: 80rem) {
+  :global(.lg-hide) {
+    display: block;
+  }
+  :global(.lg-hide-box) {
+    display: -webkit-box !important;
+    display: -moz-box !important;
+    display: -ms-flexbox !important;
+    display: box !important;
+  }
+
+  :global(.lg-show),
+  :global(.lg-show-box) {
+    display: none !important;
+  }
+}
+
+@media (min-width: 128rem) {
+  :global(.xl-hide) {
+    display: block;
+  }
+  :global(.xl-hide-box) {
+    display: -webkit-box !important;
+    display: -moz-box !important;
+    display: -ms-flexbox !important;
+    display: box !important;
+  }
+
+  :global(.xl-show),
+  :global(.xl-show-box) {
+    display: none !important;
+  }
 }
