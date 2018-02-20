@@ -1,5 +1,5 @@
 {
-  "name": "xy-components",
+  "name": "ember-xy",
   "version": "0.0.1",
   "description": "Ember components lib (inspired by material design) using Ember-CSS-Modules",
   "keywords": [
@@ -10,13 +10,13 @@
   ],
   "license": "MIT",
   "author": "Dave Cottrell <dave@cottrell.io> (https://cottrell.io/)",
-  "bugs": "https://github.com/cottrellio/xy-components/issues",
-  "homepage": "https://cottrellio.github.io/xy-components/",
+  "bugs": "https://github.com/cottrellio/ember-xy/issues",
+  "homepage": "https://cottrellio.github.io/ember-xy/",
   "directories": {
     "doc": "doc",
     "test": "tests"
   },
-  "repository": "git@github.com:cottrellio/xy-components.git",
+  "repository": "git@github.com:cottrellio/ember-xy.git",
   "scripts": {
     "build": "ember build",
     "start": "ember server",
@@ -58,6 +58,6 @@
   },
   "ember-addon": {
     "configPath": "tests/dummy/config",
-    "demoURL": "https://cottrellio.github.io/xy-components/"
+    "demoURL": "https://cottrellio.github.io/ember-xy/"
   }
 }

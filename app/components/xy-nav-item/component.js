@@ -1,1 +1,1 @@
-export { default } from 'xy-components/components/xy-nav-item/component';
+export { default } from 'ember-xy/components/xy-nav-item/component';

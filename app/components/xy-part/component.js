@@ -1,1 +1,1 @@
-export { default } from 'xy-components/components/xy-part/component';
+export { default } from 'ember-xy/components/xy-part/component';

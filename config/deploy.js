@@ -6,7 +6,7 @@ module.exports = function(deployTarget) {
     build: {},
     // include other plugin configuration that applies to all deploy targets here
     ghpages: {
-      gitRemoteUrl: 'git@github.com:cottrellio/xy-components.git',
+      gitRemoteUrl: 'git@github.com:cottrellio/ember-xy.git',
     },
   };
 

@@ -2,7 +2,7 @@
 'use strict';
 
 module.exports = {
-  name: 'xy-components',
+  name: 'ember-xy',
   options: {
     cssModules: {
       plugins: [

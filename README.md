@@ -1,10 +1,10 @@
-# xy-components
+# ember-xy
 
 Inspired by Material Design (MD) component-library for Ember, but this time written with [Ember-CSS-Modules](https://github.com/salsify/ember-css-modules)!
 
 I say inspired because while a lot of the core design/ functionality comes from MD, I have taken many liberties.
 
-Check out the [Docs with live demos](https://cottrellio.github.io/xy-components/)!
+Check out the [Docs with live demos](https://cottrellio.github.io/ember-xy/)!
 
 ## Why CSS Modules?
 
@@ -22,8 +22,8 @@ tldr; By moving your CSS into your component module, you can take control of the
 
 ## Installation
 
-* `git clone git@github.com:cottrellio/xy-components.git` this repository
-* `cd xy-components`
+* `git clone git@github.com:cottrellio/ember-xy.git` this repository
+* `cd ember-xy`
 * `npm install`
 
 ## Running

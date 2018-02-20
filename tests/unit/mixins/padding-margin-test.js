@@ -1,5 +1,5 @@
 import EmberObject from '@ember/object';
-import PaddingMarginMixin from 'xy-components/mixins/padding-margin';
+import PaddingMarginMixin from 'ember-xy/mixins/padding-margin';
 import { module, test } from 'qunit';
 
 module('Unit | Mixin | padding margin');

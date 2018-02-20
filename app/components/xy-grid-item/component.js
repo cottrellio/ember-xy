@@ -1,1 +1,1 @@
-export { default } from 'xy-components/components/xy-grid-item/component';
+export { default } from 'ember-xy/components/xy-grid-item/component';

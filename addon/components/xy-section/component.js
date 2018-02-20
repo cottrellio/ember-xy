@@ -1,5 +1,5 @@
 import Component from '@ember/component';
-import PaddingMarginMixin from 'xy-components/mixins/padding-margin';
+import PaddingMarginMixin from 'ember-xy/mixins/padding-margin';
 import layout from './template';
 import styles from './styles';
 
