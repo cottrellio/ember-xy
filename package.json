@@ -1,6 +1,6 @@
 {
   "name": "ember-xy",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Ember components lib (inspired by material design) using Ember-CSS-Modules",
   "keywords": [
     "ember-components",
