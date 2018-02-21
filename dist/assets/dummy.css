@@ -1,0 +1,598 @@
+/* styles for dummy/styles/app.css */
+@font-face {
+  font-family: ProximaNova;
+  font-style: normal;
+  font-weight: 100;
+  src: url(fonts/proximanova/proximanova-thin.eot?#iefix) format("embedded-opentype"), url(fonts/proximanova/proximanova-thin.woff2) format("woff2"), url(fonts/proximanova/proximanova-thin.woff) format("woff"), url(fonts/proximanova/proximanova-thin.ttf) format("truetype"), url(fonts/proximanova/proximanova-thin.svg#ProximaNova) format("svg");
+}
+
+@font-face {
+  font-family: ProximaNova;
+  font-style: normal;
+  font-weight: 300;
+  src: url(fonts/proximanova/proximanova-light.eot?#iefix) format("embedded-opentype"), url(fonts/proximanova/proximanova-light.woff2) format("woff2"), url(fonts/proximanova/proximanova-light.woff) format("woff"), url(fonts/proximanova/proximanova-light.ttf) format("truetype"), url(fonts/proximanova/proximanova-light.svg#ProximaNova) format("svg");
+}
+
+@font-face {
+  font-family: ProximaNova;
+  font-style: normal;
+  font-weight: 400;
+  src: url(fonts/proximanova/proximanova-regular.eot?#iefix) format("embedded-opentype"), url(fonts/proximanova/proximanova-regular.woff2) format("woff2"), url(fonts/proximanova/proximanova-regular.woff) format("woff"), url(fonts/proximanova/proximanova-regular.ttf) format("truetype"), url(fonts/proximanova/proximanova-regular.svg#ProximaNova) format("svg");
+}
+
+@font-face {
+  font-family: ProximaNova;
+  font-style: normal;
+  font-weight: 500;
+  src: url(fonts/proximanova/proximanova-semibold.eot?#iefix) format("embedded-opentype"), url(fonts/proximanova/proximanova-semibold.woff2) format("woff2"), url(fonts/proximanova/proximanova-semibold.woff) format("woff"), url(fonts/proximanova/proximanova-semibold.ttf) format("truetype"), url(fonts/proximanova/proximanova-semibold.svg#ProximaNova) format("svg");
+}
+
+@font-face {
+  font-family: ProximaNova;
+  font-style: normal;
+  font-weight: 600;
+  src: url(fonts/proximanova/proximanova-bold.eot?#iefix) format("embedded-opentype"), url(fonts/proximanova/proximanova-bold.woff2) format("woff2"), url(fonts/proximanova/proximanova-bold.woff) format("woff"), url(fonts/proximanova/proximanova-bold.ttf) format("truetype"), url(fonts/proximanova/proximanova-bold.svg#ProximaNova) format("svg");
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 100%;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
+  background: 0 0;
+}
+
+body,
+html {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+}
+
+body {
+  font-family: ProximaNova, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 1rem;
+  line-height: 1.25;
+  font-weight: 400;
+  color: #232222;
+  -webkit-font-smoothing: antialiased;
+  background-color: #fff;
+}
+
+@media (min-width:64rem) {
+  body {
+    line-height: 1.375;
+  }
+}
+
+p {
+  margin: 0 0 1rem;
+}
+
+p+h1,
+p+h2,
+p+h3,
+p+h4,
+p+h5,
+p+h6 {
+  margin-top: 2rem;
+}
+
+p:last-child {
+  margin-bottom: 0;
+}
+
+small {
+  font-size: .875rem;
+  line-height: 1;
+}
+
+strong {
+  font-weight: 600;
+}
+
+address {
+  font-style: normal;
+}
+
+code {
+  background-color: #f8f8f8;
+}
+
+._h1_usxgve,
+._h2_usxgve,
+._h3_usxgve,
+._h4_usxgve,
+._h5_usxgve,
+._h6_usxgve,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: ProximaNova, HelveticaNeue-Light, "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+._h1_usxgve ._small_usxgve,
+._h1_usxgve small,
+._h2_usxgve ._small_usxgve,
+._h2_usxgve small,
+._h3_usxgve ._small_usxgve,
+._h3_usxgve small,
+._h4_usxgve ._small_usxgve,
+._h4_usxgve small,
+._h5_usxgve ._small_usxgve,
+._h5_usxgve small,
+._h6_usxgve ._small_usxgve,
+._h6_usxgve small,
+h1 ._small_usxgve,
+h1 small,
+h2 ._small_usxgve,
+h2 small,
+h3 ._small_usxgve,
+h3 small,
+h4 ._small_usxgve,
+h4 small,
+h5 ._small_usxgve,
+h5 small,
+h6 ._small_usxgve,
+h6 small {
+  font-weight: 400;
+  font-size: 35%;
+  line-height: 1;
+}
+
+._h1_usxgve+ol,
+._h1_usxgve+p,
+._h1_usxgve+ul,
+._h2_usxgve+ol,
+._h2_usxgve+p,
+._h2_usxgve+ul,
+._h3_usxgve+ol,
+._h3_usxgve+p,
+._h3_usxgve+ul,
+._h4_usxgve+ol,
+._h4_usxgve+p,
+._h4_usxgve+ul,
+._h5_usxgve+ol,
+._h5_usxgve+p,
+._h5_usxgve+ul,
+._h6_usxgve+ol,
+._h6_usxgve+p,
+._h6_usxgve+ul,
+h1+ol,
+h1+p,
+h1+ul,
+h2+ol,
+h2+p,
+h2+ul,
+h3+ol,
+h3+p,
+h3+ul,
+h4+ol,
+h4+p,
+h4+ul,
+h5+ol,
+h5+p,
+h5+ul,
+h6+ol,
+h6+p,
+h6+ul {
+  margin-top: .5rem;
+}
+
+@media (min-width:48rem) {
+  ._h1_usxgve+ol,
+  ._h1_usxgve+p,
+  ._h1_usxgve+ul,
+  ._h2_usxgve+ol,
+  ._h2_usxgve+p,
+  ._h2_usxgve+ul,
+  ._h3_usxgve+ol,
+  ._h3_usxgve+p,
+  ._h3_usxgve+ul,
+  ._h4_usxgve+ol,
+  ._h4_usxgve+p,
+  ._h4_usxgve+ul,
+  ._h5_usxgve+ol,
+  ._h5_usxgve+p,
+  ._h5_usxgve+ul,
+  ._h6_usxgve+ol,
+  ._h6_usxgve+p,
+  ._h6_usxgve+ul,
+  h1+ol,
+  h1+p,
+  h1+ul,
+  h2+ol,
+  h2+p,
+  h2+ul,
+  h3+ol,
+  h3+p,
+  h3+ul,
+  h4+ol,
+  h4+p,
+  h4+ul,
+  h5+ol,
+  h5+p,
+  h5+ul,
+  h6+ol,
+  h6+p,
+  h6+ul {
+    margin-top: 1rem;
+  }
+}
+
+@media (min-width:64rem) {
+  ._h1_usxgve+ol,
+  ._h1_usxgve+p,
+  ._h1_usxgve+ul,
+  ._h2_usxgve+ol,
+  ._h2_usxgve+p,
+  ._h2_usxgve+ul,
+  ._h3_usxgve+ol,
+  ._h3_usxgve+p,
+  ._h3_usxgve+ul,
+  ._h4_usxgve+ol,
+  ._h4_usxgve+p,
+  ._h4_usxgve+ul,
+  ._h5_usxgve+ol,
+  ._h5_usxgve+p,
+  ._h5_usxgve+ul,
+  ._h6_usxgve+ol,
+  ._h6_usxgve+p,
+  ._h6_usxgve+ul,
+  h1+ol,
+  h1+p,
+  h1+ul,
+  h2+ol,
+  h2+p,
+  h2+ul,
+  h3+ol,
+  h3+p,
+  h3+ul,
+  h4+ol,
+  h4+p,
+  h4+ul,
+  h5+ol,
+  h5+p,
+  h5+ul,
+  h6+ol,
+  h6+p,
+  h6+ul {
+      margin-top: 1.5rem;
+  }
+}
+
+._h1_usxgve+ol,
+._h1_usxgve+p,
+._h1_usxgve+ul,
+._h2_usxgve+ol,
+._h2_usxgve+p,
+._h2_usxgve+ul,
+._h3_usxgve+ol,
+._h3_usxgve+p,
+._h3_usxgve+ul,
+h1+ol,
+h1+p,
+h1+ul,
+h2+ol,
+h2+p,
+h2+ul,
+h3+ol,
+h3+p,
+h3+ul {
+  margin-top: .5rem;
+}
+
+._h4_usxgve,
+._h5_usxgve,
+._h6_usxgve,
+h4,
+h5,
+h6 {
+  font-weight: 400;
+}
+
+._h4_usxgve+ol,
+._h4_usxgve+p,
+._h4_usxgve+ul,
+._h5_usxgve+ol,
+._h5_usxgve+p,
+._h5_usxgve+ul,
+._h6_usxgve+ol,
+._h6_usxgve+p,
+._h6_usxgve+ul,
+h4+ol,
+h4+p,
+h4+ul,
+h5+ol,
+h5+p,
+h5+ul,
+h6+ol,
+h6+p,
+h6+ul {
+  margin-top: .5rem;
+}
+
+._h1_usxgve,
+h1 {
+  font-size: 2rem;
+  line-height: 1.25;
+}
+
+@media (min-width:64rem) {
+  ._h1_usxgve,
+  h1 {
+    font-size: 2.5rem;
+    line-height: 1.125;
+  }
+}
+
+@media (min-width:80rem) {
+  ._h1_usxgve,
+  h1 {
+      font-size: 3rem;
+      line-height: 1.05;
+  }
+}
+
+._h2_usxgve,
+h2 {
+  font-size: 1.625rem;
+  line-height: 1.15385;
+}
+
+@media (min-width:64rem) {
+  ._h2_usxgve,
+  h2 {
+    font-size: 2rem;
+    line-height: 1.25;
+  }
+}
+
+@media (min-width:80rem) {
+  ._h2_usxgve,
+  h2 {
+    font-size: 2.25rem;
+  }
+}
+
+._h3_usxgve,
+h3 {
+  font-size: 1.375rem;
+  line-height: 1.13636;
+}
+
+@media (min-width:64rem) {
+  ._h3_usxgve,
+  h3 {
+    font-size: 1.5rem;
+    line-height: 1.25;
+  }
+}
+
+@media (min-width:80rem) {
+  ._h3_usxgve,
+  h3 {
+    font-size: 1.75rem;
+  }
+}
+
+._h4_usxgve,
+h4 {
+  font-size: 1.125rem;
+  line-height: 1.11111;
+}
+
+@media (min-width:64rem) {
+  ._h4_usxgve,
+  h4 {
+    line-height: 1.22222;
+  }
+}
+
+._h5_usxgve,
+h5 {
+  font-size: 1rem;
+}
+
+._h6_usxgve,
+h6 {
+  font-size: .875rem;
+}
+
+a {
+  color: #006eff;
+}
+
+a:hover {
+  color: #4696ff;
+}
+
+.sidebar {
+  width: 210px;
+}
+
+.fixed {
+  position: fixed;
+}
+
+/* HIDE / SHOW classes */
+
+/* xs */
+.xs-hide,
+.xs-hide-box {
+  display: none !important;
+}
+
+.xs-show {
+  display: block !important;
+}
+.xs-show-box {
+  display: -webkit-box !important;
+  display: -moz-box !important;
+  display: -ms-flexbox !important;
+  display: box !important;
+}
+
+/* sm */
+.sm-hide,
+.sm-hide-box,
+.sm-hide-inline {
+  display: none !important;
+}
+
+.sm-show {
+  display: block !important;
+}
+.sm-show-box {
+  display: -webkit-box !important;
+  display: -moz-box !important;
+  display: -ms-flexbox !important;
+  display: box !important;
+}
+
+/* md */
+.md-hide,
+.md-hide-box {
+  display: none !important;
+}
+
+.md-show {
+  display: block !important;
+}
+.md-show-box {
+  display: -webkit-box !important;
+  display: -moz-box !important;
+  display: -ms-flexbox !important;
+  display: box !important;
+}
+
+/* lg */
+.lg-hide,
+.lg-hide-box {
+  display: none !important;
+}
+
+.lg-show {
+  display: block !important;
+}
+.lg-show-box {
+  display: -webkit-box !important;
+  display: -moz-box !important;
+  display: -ms-flexbox !important;
+  display: box !important;
+}
+
+/* xl */
+.xl-hide,
+.xl-hide-box {
+  display: none !important;
+}
+
+.xl-show {
+  display: block !important;
+}
+.xl-show-box {
+  display: -webkit-box !important;
+  display: -moz-box !important;
+  display: -ms-flexbox !important;
+  display: box !important;
+}
+
+@media (min-width: 30rem) {
+  .xs-hide {
+    display: block;
+  }
+  .xs-hide-box {
+    display: -webkit-box !important;
+    display: -moz-box !important;
+    display: -ms-flexbox !important;
+    display: box !important;
+  }
+
+  .xs-show,
+  .xs-show-box {
+    display: none !important;
+  }
+}
+
+@media (min-width: 48rem) {
+  .sm-hide {
+    display: block;
+  }
+  .sm-hide-box {
+    display: -webkit-box !important;
+    display: -moz-box !important;
+    display: -ms-flexbox !important;
+    display: box !important;
+  }
+  .sm-hide-inline {
+    display: inline-block !important;
+  }
+
+  .sm-show,
+  .sm-show-box {
+    display: none !important;
+  }
+}
+
+@media (min-width: 64rem) {
+  .md-hide {
+    display: block;
+  }
+  .md-hide-box {
+    display: -webkit-box !important;
+    display: -moz-box !important;
+    display: -ms-flexbox !important;
+    display: box !important;
+  }
+
+  .md-show,
+  .md-show-box {
+    display: none !important;
+  }
+}
+
+@media (min-width: 80rem) {
+  .lg-hide {
+    display: block;
+  }
+  .lg-hide-box {
+    display: -webkit-box !important;
+    display: -moz-box !important;
+    display: -ms-flexbox !important;
+    display: box !important;
+  }
+
+  .lg-show,
+  .lg-show-box {
+    display: none !important;
+  }
+}
+
+@media (min-width: 128rem) {
+  .xl-hide {
+    display: block;
+  }
+  .xl-hide-box {
+    display: -webkit-box !important;
+    display: -moz-box !important;
+    display: -ms-flexbox !important;
+    display: box !important;
+  }
+
+  .xl-show,
+  .xl-show-box {
+    display: none !important;
+  }
+}
