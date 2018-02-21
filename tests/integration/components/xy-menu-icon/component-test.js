@@ -2,23 +2,33 @@ import { moduleForComponent, test } from 'ember-qunit';
 import hbs from 'htmlbars-inline-precompile';
 
 moduleForComponent('xy-menu-icon', 'Integration | Component | xy menu icon', {
-  integration: true
+  integration: true,
 });
 
 test('it renders', function(assert) {
-  // Set any properties with this.set('myProperty', 'value');
-  // Handle any actions with this.on('myAction', function(val) { ... });
-
   this.render(hbs`{{xy-menu-icon}}`);
 
   assert.equal(this.$().text().trim(), '');
+});
 
-  // Template block usage:
-  this.render(hbs`
-    {{#xy-menu-icon}}
-      template block text
-    {{/xy-menu-icon}}
-  `);
+test('it toggles local-class `open` on click', function(assert) {
+  // Set local styles.
+  this.set('__styles__', {
+    open: '--open',
+  });
 
-  assert.equal(this.$().text().trim(), 'template block text');
+  // Render component.
+  this.render(hbs`{{xy-menu-icon __styles__=__styles__}}`);
+
+  // Click component to open.
+  this.$('.xy-menu-icon').click();
+
+  // Ensure `--open` is there.
+  assert.ok(this.$('.xy-menu-icon').hasClass('--open'));
+
+  // Click component to close.
+  this.$('.xy-menu-icon').click();
+
+  // Ensure `--open` is not there.
+  assert.ok(!this.$('.xy-menu-icon').hasClass('--open'));
 });

@@ -6,6 +6,8 @@ export default Component.extend({
 
   layout,
   styles,
+
+  classNames: 'xy-menu-icon',
   localClassNames: 'icon',
   localClassNameBindings: 'isOpen:open',
 
