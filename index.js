@@ -3,6 +3,7 @@
 
 module.exports = {
   name: 'ember-xy',
+
   options: {
     cssModules: {
       plugins: [
